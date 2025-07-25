@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Changotra Sweets Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf2;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #e67e22;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeDown 1s ease-out;
+    }
+
+    header h1 { font-size: 45px; }
+    header p { font-size: 20px; margin-top: 10px; }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: #e67e22;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .products img {
+      width: 220px;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 0 12px #ccc;
+      transition: transform 0.3s ease;
+    }
+
+    .products img:hover {
+      transform: scale(1.05);
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: #e67e22;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      animation: bounce 2s infinite;
+    }
+
+    footer {
+      background-color: #e67e22;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    /* Team Styling */
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .team-member {
+      background-color: #fff3e0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 260px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      animation: bounceIn 1s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    @keyframes bounceIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @media screen and (max-width: 768px) {
+      header h1 { font-size: 32px; }
+      .products img { width: 150px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Changotra Sweets Shop</h1>
+    <p>Freshly Made Sweets Daily at Our Local Shop</p>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We are a family-owned sweet shop serving fresh, traditional Indian sweets made in-house with love and pure ingredients. Come visit us in Kathua!</p>
+  </section>
+
+  <section class="products">
+    <h2>Our Sweet Collection</h2>
+    <img src="istockphoto.jpg" alt="Gulab Jamun">
+    <img src="barfii.jpg" alt="Barfi">
+    <img src="rasgulla.webp"Rasgulla">
+    <p><strong>Also Available:</strong> Laddoo, Kaju Katli, Jalebi, and more!</p>
+  </section>
+
+  <section class="team">
+    <h2>Our Team</h2>
+
+    <div class="team-member">
+      <img src="rampal.PNG" alt="Rampal (Pallu)">
+      <p>👑 <strong>Shop Owner:</strong> Rampal (Pallu)</p>
+      <p>📞 <a href="tel:+919115834305">+91-9115834305</a></p>
+    </div>
+
+    <div class="team-member">
+      <img src="shamlal.PNG" alt="Shamlal">
+      <p>👨‍🍳 <strong>Sweet Maker:</strong> Shamlal</p>
+      <p>📞 <a href="tel:+916005513914">+91-6005513914</a></p>
+    </div>
+
+    <div class="team-member">
+      <img src="dharampal.PNG" alt="Dharampal">
+      <p>🏪 <strong>Branch Owner:</strong> Dharampal </p>
+      <p>📞 <a href="tel:+918872530643">+91-8872530643</a></p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 <a href="tel:+916284703089">+91-6284703089</a></p>
+    <p>📧 <a href="mailto:adhinikhil30@gmail.com">adhinikhil30@gmail.com</a></p>
+    <p>📍 sunder chack , sujanpur , pathankot</p>
+    <p>📸 <a href="https://instagram.com/changotra_sweets" target="_blank">@changotra_sweets</a></p>
+    <a class="whatsapp-btn" href="https://wa.me/916284703089" target="_blank">Chat on WhatsApp</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Changotra Sweets Shop. All rights reserved.
+  </footer>
+
+  <script>
+    // Animate sections on scroll
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
